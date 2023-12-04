@@ -1,0 +1,21 @@
+---
+layout: html.webc
+pagination:
+  data: members.users
+  size: 1
+  alias: member
+  resolve: values
+permalink: 'share/{{ member.username | hash }}/index.html'
+---
+
+<main>
+  <center-layout>
+    <stack-layout space="s5">
+      <h1>Hello there</h1>
+
+      <section class="headshot">
+        <p>Hi, <template @text="member" webc:nokeep></template></p>
+      </section>
+    </stack-layout>
+  </center-layout>
+</main>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title @text="site.title"></title>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Eleventy repro</title>
+    <style @raw="getBundle('css')" webc:keep></style>
+  </head>
+  <body>
+    <div @html="this.content" webc:nokeep></div>
+    <script type="module" @raw="getBundle('js')" webc:keep></script>
+  </body>
+</html>
