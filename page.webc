@@ -5,17 +5,13 @@ pagination:
   size: 1
   alias: member
   resolve: values
-permalink: 'share/{{ member.username | hash }}/index.html'
+permalink: 'share/<template webc:type="11ty" 11ty:type="njk">{{ member.username }}</template>/index.html'
 ---
 
 <main>
-  <center-layout>
-    <stack-layout space="s5">
-      <h1>Hello there</h1>
+  <h1>Hello there</h1>
 
-      <section class="headshot">
-        <p>Hi, <template @text="member" webc:nokeep></template></p>
-      </section>
-    </stack-layout>
-  </center-layout>
+  <section class="headshot">
+    <p>Hi, <template @text="member" webc:nokeep></template></p>
+  </section>
 </main>

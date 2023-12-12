@@ -1,7 +1,7 @@
 {
   "users": [
-    { "name": "geoff-testington" },
-    { "name": "jess-smith" },
-    { "name": "phil-wang" }
+    { "username": "geoff-testington" },
+    { "username": "jess-smith" },
+    { "username": "phil-wang" }
   ]
 }
