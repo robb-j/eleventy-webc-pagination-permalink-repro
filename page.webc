@@ -5,7 +5,7 @@ pagination:
   size: 1
   alias: member
   resolve: values
-permalink: share/<template webc:type="11ty" 11ty:type="njk">{{ member.username | hash }}</template>/
+permalink: 'share/<template webc:type="11ty" 11ty:type="njk">{{ member.username | hash }}</template>/'
 ---
 
 <main>
